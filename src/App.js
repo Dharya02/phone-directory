@@ -4,9 +4,10 @@ import React from 'react';
 function App() {
   return (
     <div>
-       <div className="header">
+       {/* <div className="header">// #1
           Phone Directory
-        </div>
+        </div> */}
+        <header/>
         <button>Add</button>
         <div>
           <span>Name</span><br />
