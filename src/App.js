@@ -1,22 +1,31 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Header from './Header.js';
 
 
-function App() {
-  let subscribers = [
-    {
-      id: 1,
-      name: "Shilpa Bhat",
-      phone: "8888888888"
-    },
-    {
-      id: 2,
-      name: "Srishti Gupta",
-      phone: "9999999999"
-    }
-  ];
+// function App() {
+  // let subscribers = [
+  //   {
+  //     id: 1,
+  //     name: "Shilpa Bhat",
+  //     phone: "8888888888"
+  //   },
+  //   {
+  //     id: 2,
+  //     name: "Srishti Gupta",
+  //     phone: "9999999999"
+  //   }
+  // ];
+  class App extends Component {
 
+  constructor() {
+    super();
+    this.state = {
+      subscribersListToShow: []
+    }
+  }
+  
+   render(){
   return (
     <div>
        {/* <div className="header">// #1
@@ -37,7 +46,7 @@ function App() {
             <span className="grid-item phone-heading">Phone</span>
           </div> 
           {
-            subscribers.map(sub => {
+            this.state.subscribersListToShow.map(sub => {
               return <div key={sub.id} className="grid-container">
                 <span className="grid-item">{sub.name}</span>
                 <span className="grid-item">{sub.phone}</span>
@@ -45,11 +54,12 @@ function App() {
                   <button className="custom-btn delete-btn">Delete</button>
                 </span>
               </div>
-           })
+            })
           }
         </div>
-    </div>
-  );
+      </div>
+    );
+  }
 }
 
 

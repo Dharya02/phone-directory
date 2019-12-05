@@ -1,10 +1,10 @@
-.component-body-container {
+/* .component-body-container {
   padding: 20px;
 }
 
 .custom-btn {
   padding: 10px;
-  border: none;
+  border: none;  #12
   margin-right: 10px;
   text-transform: uppercase;
   width: 80px;
@@ -16,7 +16,7 @@
 .add-btn {
   background: #7ab97a;
   color: #fff;
-}
+} */
 
 .grid-container {
   display: grid;
