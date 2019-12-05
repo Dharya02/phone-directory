@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Header from './Header.js';
 
 
 function App() {
@@ -28,15 +29,13 @@ function App() {
           <span>Phone</span> */}
             <Header heading="Phone Directory" />
 
-        <div className="component-body-container">
+         <div className="component-body-container">
           <button className="custom-btn add-btn">Add</button>
 
           <div className="grid-container heading-container">
-          class App extends Component {
             <span className="grid-item name-heading">Name</span>
             <span className="grid-item phone-heading">Phone</span>
-          </div>
-          class App extends Component {
+          </div> 
           {
             subscribers.map(sub => {
               return <div key={sub.id} className="grid-container">
@@ -46,11 +45,12 @@ function App() {
                   <button className="custom-btn delete-btn">Delete</button>
                 </span>
               </div>
-            })
+           })
           }
         </div>
     </div>
   );
 }
+
 
 export default App;
